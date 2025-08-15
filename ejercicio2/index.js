@@ -32,7 +32,6 @@ console.log(textoh2);
 //Basandote en el siguiente array crea una lista ul > li con los textos del array:
 const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 const ul = document.createElement("ul");
-
 for (const app of apps){
     const li = document.createElement("li");
     li.innerText = app;
@@ -47,7 +46,6 @@ nodos.forEach(element => element.remove());
 //Inserta una p con el texto 'Voy en medio!' entre los dos div. Recuerda que no solo puedes insertar elementos con .appendChild.
 const otraP = document.createElement("p");
 otraP.textContent = "¡Voy en medio!";
-
 const segundoDiv = document.querySelectorAll("div")[3];
 document.body.insertBefore(otraP,segundoDiv);
 console.log(otraP);
