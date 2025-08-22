@@ -6,4 +6,18 @@ button.addEventListener("click", (event) =>{
 });
 
 //Añade un evento 'focus' que ejecute un console.log con el valor del input
+const input = document.querySelector("#input")
+input.addEventListener("focus", () => {
+    console.log("El valor del input es: " + input.value);
+})
 
+//Añade un evento 'input' que ejecute un console.log con el valor del input
+
+const input2 = document.createElement("input");
+input2.type = "text";
+input2.placeholder = "Escribe algo...";
+
+input2.addEventListener("input", function(){
+    console.log(input2.value);
+})
+document.body.appendChild(input2);
